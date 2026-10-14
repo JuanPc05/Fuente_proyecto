@@ -1,0 +1,546 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CESDE Conecta - Impulsa tu empresa con el talento del futuro</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration with Design Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#dbb8ff",
+            "surface-variant": "#34343a",
+            "error": "#ffb4ab",
+            "on-primary-fixed": "#3f001b",
+            "tertiary-fixed": "#7df4ff",
+            "on-secondary": "#470083",
+            "on-tertiary-fixed": "#002022",
+            "surface": "#121318",
+            "on-primary-container": "#ffffff",
+            "outline-variant": "#5a4046",
+            "tertiary-fixed-dim": "#00dbe9",
+            "outline": "#a98890",
+            "primary-container": "#e11d74",
+            "tertiary-container": "#00838c",
+            "primary": "#ffb1c5",
+            "secondary-fixed": "#efdbff",
+            "on-primary-fixed-variant": "#8f0045",
+            "on-secondary-container": "#d0a6ff",
+            "surface-container-low": "#1a1b21",
+            "primary-fixed-dim": "#ffb1c5",
+            "inverse-on-surface": "#2f3036",
+            "error-container": "#93000a",
+            "secondary-fixed-dim": "#dbb8ff",
+            "on-tertiary": "#00363a",
+            "primary-fixed": "#ffd9e1",
+            "surface-dim": "#121318",
+            "tertiary": "#00dbe9",
+            "surface-container-high": "#292a2f",
+            "on-tertiary-fixed-variant": "#004f54",
+            "on-tertiary-container": "#ffffff",
+            "on-error": "#690005",
+            "on-secondary-fixed": "#2b0052",
+            "on-surface": "#e3e1e9",
+            "inverse-primary": "#ba005c",
+            "inverse-surface": "#e3e1e9",
+            "on-background": "#e3e1e9",
+            "surface-tint": "#ffb1c5",
+            "background": "#121318",
+            "on-error-container": "#ffdad6",
+            "on-surface-variant": "#e2bdc5",
+            "secondary-container": "#6807ba",
+            "surface-container": "#1e1f25",
+            "surface-container-lowest": "#0d0e13",
+            "surface-bright": "#38393f",
+            "surface-container-highest": "#34343a",
+            "on-secondary-fixed-variant": "#6600b7",
+            "on-primary": "#65002f"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "3rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "gutter-lg": "2rem",
+            "gutter-sm": "1rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "caption": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .hero-glow-fuchsia {
+      background: radial-gradient(circle at 75% 30%, rgba(225, 29, 116, 0.16) 0%, rgba(104, 7, 186, 0.08) 45%, transparent 75%);
+    }
+    .brand-btn-gradient {
+      background: linear-gradient(135deg, #E11D74 0%, #7928CA 100%);
+    }
+    .brand-btn-glow:hover {
+      box-shadow: 0 0 24px rgba(225, 29, 116, 0.45);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
+<!-- TOP APP BAR / NAVBAR -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-lg shadow-black/40">
+<div class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="#">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACd3vqBE9ywfV8FOep7VbZCPdqXZMZ3Z6IchNtFWnxaW48MFcEEVsH7tunUrQYtafBBn1JlmVspxsSgCBEFvD-cROO-ugLdAZbCn6gnpcLgFcdt1y8Ey3viVADT6R04zqdihTxTYcy-FeBOpLSuOs90lPLNw5CASSoVMqJ5Q4h2NEGB1CcSZf7WwpOCFtJTtknCxZS6EmNTjSrP2KJAchSZkEXDsM6p0frl2BWw0IlnryTHZaijTszJjXeYqjsK8Rp02w" alt="Logo CESDE" class="h-10 w-10 rounded-full object-contain shadow-md shadow-primary-container/30 transition-transform group-hover:scale-105">
+<div class="text-headline-md font-headline-md font-extrabold text-on-surface dark:text-on-surface tracking-tight flex items-center">
+<span class="">CESDE</span>
+<span class="ml-1.5 px-2 py-0.5 rounded-lg bg-primary-container/20 text-primary-container text-label-md font-label-md border border-primary-container/30">Conecta</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary font-semibold border-b-2 border-primary-container pb-1 text-label-md font-label-md hover:text-primary dark:hover:text-primary transition-all duration-200" href="#como-funciona">Cómo funciona</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors text-label-md font-label-md hover:text-primary dark:hover:text-primary" href="#retos">Retos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors text-label-md font-label-md hover:text-primary dark:hover:text-primary" href="#testimonios">Testimonios</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors text-label-md font-label-md hover:text-primary dark:hover:text-primary" href="#contactanos">Contáctanos</a>
+</nav>
+<!-- Trailing Action Buttons -->
+<div class="flex items-center gap-3">
+<a class="text-on-surface-variant hover:text-on-surface text-label-md font-label-md px-4 py-2 rounded-xl transition-all duration-200 active:scale-95" href="#login">
+          Iniciar Sesión
+        </a>
+<a class="brand-btn-gradient brand-btn-glow text-white text-label-md font-label-md font-semibold px-5 py-2.5 rounded-xl shadow-md transition-all duration-200 active:scale-95 flex items-center gap-2" href="#registro">
+<span class="">Crear Cuenta</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="relative min-h-[90vh] flex items-center pt-8 pb-20 hero-glow-fuchsia overflow-hidden">
+<!-- Atmospheric light rings -->
+<div class="absolute -top-40 right-0 w-[550px] h-[550px] bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Hero Copy Content (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start gap-6">
+<!-- Institutional Pill Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-high/80 border border-outline-variant/40 backdrop-blur-md">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary tracking-wide">Conexión Universidad - Empresa | Proyectos Integradores</span>
+</div>
+<!-- Main Hero Headline -->
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero-mobile md:font-display-hero text-on-surface tracking-tight">
+            Impulsa tu empresa con el <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-primary to-secondary">talento del futuro</span>
+</h1>
+<!-- Body Subtitle -->
+<p class="text-body-lg font-body-lg text-on-surface-variant/90 max-w-2xl leading-relaxed">
+            Publica las necesidades y desafíos reales de tu negocio para que talentosos estudiantes de CESDE diseñen, programen e implementen soluciones innovadoras como parte de sus proyectos integradores.
+          </p>
+<!-- Primary & Secondary CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 w-full sm:w-auto">
+<a class="brand-btn-gradient brand-btn-glow text-white text-headline-sm font-headline-sm px-8 py-4 rounded-2xl shadow-xl shadow-primary-container/25 flex items-center justify-center gap-3 transition-all duration-200 active:scale-95 group" href="#registro-empresa">
+<span class="">Registrar una empresa</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1.5" style="font-variation-settings: 'FILL' 1;">arrow_right_alt</span>
+</a>
+<a class="bg-surface-container-high hover:bg-surface-bright text-on-surface border border-outline-variant/50 text-headline-sm font-headline-sm px-7 py-4 rounded-2xl flex items-center justify-center gap-2 transition-all duration-200 active:scale-95 hover:border-primary-container/50" href="#retos">
+<span class="material-symbols-outlined text-tertiary">explore</span>
+<span class="">Explorar retos vigentes</span>
+</a>
+</div>
+<!-- Proof Metrics Bar -->
+<div class="w-full pt-10 mt-6 border-t border-surface-variant/50">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col"><span class="text-headline-lg font-headline-lg text-[#00C897] font-extrabold tracking-tight">180+</span><span class="text-label-sm font-label-sm text-outline">Retos completados</span></div><div class="flex flex-col"><span class="text-headline-lg font-headline-lg text-[#00C897] font-extrabold tracking-tight">96%</span><span class="text-label-sm font-label-sm text-outline">Satisfacción empresarial</span></div><div class="flex flex-col"><span class="text-headline-lg font-headline-lg text-[#00C897] font-extrabold tracking-tight">1,200+</span><span class="text-label-sm font-label-sm text-outline">Estudiantes vinculados</span></div><div class="flex flex-col"><span class="text-headline-lg font-headline-lg text-[#00C897] font-extrabold tracking-tight">45+</span><span class="text-label-sm font-label-sm text-outline">Empresas aliadas</span></div></div>
+</div>
+</div>
+<!-- Right Interactive Hero Graphic Mockup (5 cols) -->
+<div class="lg:col-span-5 relative">
+<!-- Ambient card backing glow -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container to-secondary rounded-3xl blur-xl opacity-30"></div>
+<div class="relative bg-surface-container/90 border border-outline-variant/50 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/80 flex flex-col gap-6">
+<!-- Card Header: Sponsor + Badge + Countdown -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/60 flex items-center justify-center text-primary-container font-bold text-headline-sm">
+<span class="material-symbols-outlined text-primary-container">storefront</span>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-outline">Empresa Aliada</span>
+<p class="text-headline-sm font-headline-sm text-on-surface font-semibold">NovaLogistics S.A.S.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-container/15 text-primary text-label-sm font-label-sm border border-primary-container/30">
+                Tech &amp; IA
+              </span>
+</div>
+<!-- Challenge Title and Summary -->
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">bolt</span>
+<span class="">Reto Integrador Abierto</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Optimización de eCommerce y Predicción de Demanda con IA</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Desarrollo de un algoritmo predictivo y dashboard en tiempo real para optimizar despachos multicanal en 3 centros de distribución.
+              </p>
+</div>
+<!-- Competency Badges -->
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm border border-surface-variant">Full-stack</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm border border-surface-variant">Python / IA</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm border border-surface-variant">UX Research</span>
+</div>
+<!-- Status and Applicants Module -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest/80 border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-container/80 border-2 border-surface flex items-center justify-center text-xs font-bold text-white">JD</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container border-2 border-surface flex items-center justify-center text-xs font-bold text-white">MR</div>
+<div class="w-8 h-8 rounded-full bg-tertiary-container border-2 border-surface flex items-center justify-center text-xs font-bold text-white">CL</div>
+</div>
+<div class="text-caption font-caption text-on-surface">
+<span class="font-bold text-on-surface">4 Equipos</span> postulados
+                </div>
+</div>
+<span class="text-label-sm font-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">timer</span> 5 días restantes
+              </span>
+</div>
+<!-- Action trigger -->
+<button class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md border border-primary-container/40 hover:border-primary-container transition-all duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+<span class="">Ver detalles de postulación</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: ¿QUÉ OFRECEMOS Y CÓMO FUNCIONA? (High Contrast Light Surface Area) -->
+<section class="bg-[#F8FAFC] text-[#0F172A] py-24 px-6 md:px-12 transition-colors relative z-20" id="como-funciona">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="max-w-2xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-[#D91671] font-semibold text-xs tracking-wider uppercase">
+<span class="material-symbols-outlined text-xs">sync_alt</span>
+            Metodología Ágil Integrada
+          </div>
+<h2 class="text-headline-xl md:text-display-hero-mobile font-headline-xl md:font-display-hero-mobile text-[#0F172A] tracking-tight">
+            Un proceso simple para transformar ideas en proyectos reales
+          </h2>
+</div>
+<p class="text-body-md font-body-md text-[#475569] max-w-md">
+          Conectamos los requerimientos técnicos y productivos de tu empresa con las competencias prácticas de nuestros estudiantes y la mentoría docente especializada.
+        </p>
+</div>
+<!-- 4 Clean Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-display-hero-mobile font-display-hero-mobile text-[#E11D74]/20 font-black group-hover:text-[#E11D74] transition-colors">01</span>
+<div class="w-12 h-12 rounded-2xl bg-pink-50 text-[#D91671] flex items-center justify-center border border-pink-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">domain_add</span>
+</div>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-[#0F172A] mb-3 group-hover:text-[#D91671] transition-colors">
+              Regístrate
+            </h3>
+<p class="text-body-sm font-body-sm text-[#64748B] leading-relaxed">
+              Crea el perfil verificado de tu empresa o startup en minutos. Define tu sector económico, ubicación y áreas de interés.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-[#D91671]">
+<span class="">Paso 1: Validación rápida</span>
+<span class="material-symbols-outlined text-xs">check_circle</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-display-hero-mobile font-display-hero-mobile text-[#E11D74]/20 font-black group-hover:text-[#E11D74] transition-colors">02</span>
+<div class="w-12 h-12 rounded-2xl bg-pink-50 text-[#D91671] flex items-center justify-center border border-pink-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">post_add</span>
+</div>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-[#0F172A] mb-3 group-hover:text-[#D91671] transition-colors">
+              Publica tu necesidad (Reto)
+            </h3>
+<p class="text-body-sm font-body-sm text-[#64748B] leading-relaxed">
+              Describe tu desafío técnico, de diseño, marketing o gestión con objetivos claros, alcance esperado y métricas de éxito.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-[#D91671]">
+<span class="">Paso 2: Brief guiado</span>
+<span class="material-symbols-outlined text-xs">edit_note</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-display-hero-mobile font-display-hero-mobile text-[#E11D74]/20 font-black group-hover:text-[#E11D74] transition-colors">03</span>
+<div class="w-12 h-12 rounded-2xl bg-pink-50 text-[#D91671] flex items-center justify-center border border-pink-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups_3</span>
+</div>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-[#0F172A] mb-3 group-hover:text-[#D91671] transition-colors">
+              Conecta con estudiantes
+            </h3>
+<p class="text-body-sm font-body-sm text-[#64748B] leading-relaxed">
+              Equipos de estudiantes multidisciplinarios del CESDE postulan propuestas estructuradas con la guía y supervisión de docentes expertos.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-[#D91671]">
+<span class="">Paso 3: Asignación calificada</span>
+<span class="material-symbols-outlined text-xs">group_add</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="text-display-hero-mobile font-display-hero-mobile text-[#E11D74]/20 font-black group-hover:text-[#E11D74] transition-colors">04</span>
+<div class="w-12 h-12 rounded-2xl bg-pink-50 text-[#D91671] flex items-center justify-center border border-pink-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-[#0F172A] mb-3 group-hover:text-[#D91671] transition-colors">
+              Desarrolla tu proyecto
+            </h3>
+<p class="text-body-sm font-body-sm text-[#64748B] leading-relaxed">
+              Acompaña entregas en sprints, evalúa el avance del proyecto integrador y recibe un entregable funcional, validado y listo para su uso.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-[#D91671]">
+<span class="">Paso 4: Solución entregada</span>
+<span class="material-symbols-outlined text-xs">workspace_premium</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Under Process -->
+<div class="mt-14 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-[#E11D74] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">tips_and_updates</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-white">¿Tienes dudas sobre cómo estructurar el reto de tu empresa?</h4>
+<p class="text-body-sm font-body-sm text-slate-300">Nuestros coordinadores académicos te asesoran sin costo para definir el alcance ideal.</p>
+</div>
+</div>
+<a class="brand-btn-gradient text-white font-label-md px-6 py-3 rounded-xl whitespace-nowrap shadow hover:opacity-95 transition-all" href="#contacto-asesoria">
+          Agendar asesoría gratuita
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION: RETOS VIGENTES (Bento Grid Showcase) -->
+<section class="py-24 px-6 md:px-12 bg-surface max-w-7xl mx-auto" id="retos">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+<div>
+<span class="text-primary text-label-sm font-label-sm uppercase tracking-wider">Ecosistema en acción</span>
+<h2 class="text-headline-xl font-headline-xl text-on-surface mt-2">Retos destacados en curso</h2>
+</div>
+<a class="text-primary hover:text-white transition-colors flex items-center gap-1 font-label-md" href="#todos-los-retos">
+<span class="">Ver todos los 32 retos abiertos</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Challenges Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Challenge 1 --><div class="bg-surface-container border border-outline-variant/40 rounded-3xl p-6 flex flex-col justify-between hover:border-[#00C897]/60 transition-all duration-300"><div class="space-y-4"><div class="flex items-center justify-between"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897] animate-pulse"></span> Desarrollo Web</span><span class="text-caption font-caption text-outline flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897]"></span> Queda 1 semana</span></div><h3 class="text-headline-sm font-headline-sm text-on-surface">Plataforma de Trazabilidad Ganadera para Cooperativas</h3><p class="text-body-sm font-body-sm text-on-surface-variant">Sistema web responsivo para registrar pesajes, vacunación y geolocalización de lotes mediante códigos QR para pequeños productores rurales.</p><div class="flex flex-wrap gap-1.5 pt-2"><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">React</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Node.js</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Bases de Datos</span></div></div><div class="pt-6 mt-6 border-t border-surface-variant flex items-center justify-between"><div class="text-caption font-caption text-outline">Empresa: <strong class="text-on-surface">AgroFintech Antioquia</strong></div><span class="text-[#00C897] font-semibold text-label-md font-label-md flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#00C897]"></span> 3 Equipos</span></div></div><!-- Challenge 2 --><div class="bg-surface-container border border-outline-variant/40 rounded-3xl p-6 flex flex-col justify-between hover:border-[#00C897]/60 transition-all duration-300"><div class="space-y-4"><div class="flex items-center justify-between"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-container/15 text-primary border border-primary-container/30 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897] animate-pulse"></span> Diseño Gráfico &amp; UX</span><span class="text-caption font-caption text-outline flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897]"></span> Quedan 3 días</span></div><h3 class="text-headline-sm font-headline-sm text-on-surface">Rediseño Identidad Visual y Empaques Ecológicos</h3><p class="text-body-sm font-body-sm text-on-surface-variant">Creación de un nuevo manual de marca y propuesta de packaging sustentable para línea de cosmética botánica con foco en mercado exportador.</p><div class="flex flex-wrap gap-1.5 pt-2"><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Branding</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Packaging</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Figma</span></div></div><div class="pt-6 mt-6 border-t border-surface-variant flex items-center justify-between"><div class="text-caption font-caption text-outline">Empresa: <strong class="text-on-surface">BioEsencia Lab</strong></div><span class="text-[#00C897] font-semibold text-label-md font-label-md flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#00C897]"></span> 5 Equipos</span></div></div><!-- Challenge 3 --><div class="bg-surface-container border border-outline-variant/40 rounded-3xl p-6 flex flex-col justify-between hover:border-[#00C897]/60 transition-all duration-300"><div class="space-y-4"><div class="flex items-center justify-between"><span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897] animate-pulse"></span> Convocatoria Activa</span><span class="text-caption font-caption text-[#00C897] font-medium flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#00C897]"></span> Abierto</span></div><h3 class="text-headline-sm font-headline-sm text-on-surface">Estrategia Omnicanal de Lanzamiento para FinTech Joven</h3><p class="text-body-sm font-body-sm text-on-surface-variant">Plan táctico de contenidos, pauta y embudo de adquisición para la app de ahorro juvenil en canales TikTok, Meta Ads e influencers regionales.</p><div class="flex flex-wrap gap-1.5 pt-2"><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Growth</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Analytics</span><span class="text-caption font-caption px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Social Ads</span></div></div><div class="pt-6 mt-6 border-t border-surface-variant flex items-center justify-between"><div class="text-caption font-caption text-outline">Empresa: <strong class="text-on-surface">NexoPagos S.A.</strong></div><span class="text-[#00C897] font-semibold text-label-md font-label-md flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#00C897]"></span> 2 Equipos</span></div></div></div>
+</section>
+<!-- SECTION: HISTORIAS DE ÉXITO Y TESTIMONIOS -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-lowest relative overflow-hidden" id="testimonios">
+<div class="max-w-7xl mx-auto relative z-10">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs">star</span>
+          Impacto Comprobado
+        </span>
+<h2 class="text-headline-xl md:text-display-hero-mobile font-headline-xl md:font-display-hero-mobile text-on-surface tracking-tight">
+          Historias de éxito que inspiran al futuro
+        </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+          Descubre cómo las empresas resuelven cuellos de botella reales mientras los estudiantes de CESDE aceleran su empleabilidad mediante experiencia tangible.
+        </p>
+</div>
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Testimonio 1: Empresa / CEO --><div class="bg-surface-container rounded-3xl p-8 border border-outline-variant/40 border-b-2 border-b-[#00C897]/60 flex flex-col justify-between hover:border-primary-container/40 transition-all duration-300 shadow-sm"><di<div><div class="flex items-center gap-1 text-primary-container mb-6"><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="text-body-md font-body-md text-on-surface mb-8 italic leading-relaxed">"Teníamos pérdidas recurrentes por desajustes manuales en el inventario. El equipo de estudiantes de desarrollo de software del CESDE entregó un módulo automatizado que redujo los tiempos de auditoría en un 70%. Superó todas nuestras expectativas operativas."</p></di<div></div><div class="flex items-center gap-4 pt-6 border-t border-surface-variant"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-container to-secondary flex items-center justify-center text-white font-bold text-headline-sm shrink-0">CR</div><div><h4 class="text-headline-sm font-headline-sm text-on-surface">Carlos Restrepo</h4><p class="text-label-sm font-label-sm text-outline">CEO &amp; Co-fundador, LogiMove Colombia</p></div></div><!-- Testimonio 2: Estudiante CESDE --><div class="bg-surface-container rounded-3xl p-8 border border-outline-variant/40 border-b-2 border-b-[#00C897]/60 flex flex-col justify-between hover:border-primary-container/40 transition-all duration-300 shadow-sm"><div><div class="flex items-center gap-1 text-primary-container mb-6"><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="text-body-md font-body-md text-on-surface mb-8 italic leading-relaxed">"Liderar el rediseño de marca de una pyme local antes de graduarme de Diseño Digital cambió mi carrera. No fue una simulación académica ficticia; presentamos ante la gerencia y hoy veo mis piezas circulando en el mercado. Salgo con experiencia verificable."</p></div><div class="flex items-center gap-4 pt-6 border-t border-surface-variant"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-tertiary to-secondary-container flex items-center justify-center text-white font-bold text-headline-sm shrink-0">VM</div><div><h4 class="text-headline-sm font-headline-sm text-on-surface">Valentina Montoya</h4><p class="text-label-sm font-label-sm text-primary">Estudiante de Diseño Digital, CESDE</p></div></div></div><!-- Testimonio 3: Directora de Innovación --><div class="bg-surface-container rounded-3xl p-8 border border-outline-variant/40 border-b-2 border-b-[#00C897]/60 flex flex-col justify-between hover:border-primary-container/40 transition-all duration-300 shadow-sm"><div><div class="flex items-center gap-1 text-primary-container mb-6"><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="text-body-md font-body-md text-on-surface mb-8 italic leading-relaxed">"Lo más valioso de CESDE Conecta es el acompañamiento de los docentes tutores. Garantizan el rigor técnico y metodológico mientras el talento joven aporta ideas frescas y disruptivas que dentro de la empresa no habríamos concebido con tanta rapidez."</p></div><div class="flex items-center gap-4 pt-6 border-t border-surface-variant"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white font-bold text-headline-sm shrink-0">SM</div><div><h4 class="text-headline-sm font-headline-sm text-on-surface">Silvia Mejía</h4><p class="text-label-sm font-label-sm text-outline">Directora de Innovación, Retail Group</p></div></div></div></div>
+</div>
+</section>
+<!-- BANNER CTA PREVIO AL FOOTER -->
+<section class="py-20 px-6 md:px-12 bg-background relative overflow-hidden" id="contactanos">
+<div class="max-w-7xl mx-auto">
+<div class="relative rounded-3xl bg-surface-container-high border border-primary-container/40 p-10 md:p-16 overflow-hidden shadow-2xl shadow-black/60">
+<!-- Subtle back glow inside box -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+<div class="max-w-2xl text-center lg:text-left space-y-4">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs">rocket_launch</span>
+              Convocatoria abierta para el próximo ciclo
+            </span>
+<h2 class="text-headline-xl md:text-display-hero-mobile font-headline-xl md:font-display-hero-mobile text-on-surface">
+              ¿Listo para potenciar tu empresa con soluciones innovadoras?
+            </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+              Sube el primer reto de tu negocio en solo 5 minutos. Conecta directamente con los líderes del talento técnico y tecnológico que están transformando la industria.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
+<a class="brand-btn-gradient brand-btn-glow text-white text-headline-sm font-headline-sm px-8 py-4 rounded-2xl shadow-xl transition-all duration-200 active:scale-95 flex items-center justify-center gap-3 w-full sm:w-auto" href="#publicar-reto">
+<span class="">Publicar un reto ahora</span>
+<span class="material-symbols-outlined">add_task</span>
+</a>
+<a class="bg-surface-container hover:bg-surface-bright text-on-surface border border-outline-variant/60 font-headline-sm text-headline-sm px-6 py-4 rounded-2xl transition-all duration-200 w-full sm:w-auto text-center" href="#contacto">
+              Hablar con un asesor
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER INSTITUCIONAL COMPLETO -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant/30 dark:border-surface-variant/30">
+<div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-8">
+<!-- Top Grid: Brand Description + Link Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+<!-- Col 1 & 2: Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLIOQVe9vX78sHFTOaSYSola16ZrEFoBYB92a0j01985JRyd_U2QKUfP2ZYEdSiK0cRjERRHvsMYVOBnXpbRfMfSnMJ5rTTq3xd_rP289I21_mvdRwJhahVKCD2VjIxbiGPEV0P36mx-DJMJLSErbBQ2z8OT52VUSezH4DQmwN1r-C8jMSpszkVzLlAhUJ-gu0SFK2BkLCRWuFMbCD57P8IUaOVsMQLBSmecu6pvePIdvr7VzFrjmWp_K13nrs6znAzk" alt="Logo CESDE" class="w-9 h-9 rounded-full object-contain">
+<div class="text-headline-md font-headline-md font-extrabold text-on-surface dark:text-on-surface">
+              CESDE Conecta
+            </div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Plataforma institucional de vinculación formativa y productiva. Conectamos los desafíos reales de las organizaciones con el talento técnico y creativo de los estudiantes en sus proyectos integradores.
+          </p>
+<!-- Social Media Links (Lucide/Material based icons) -->
+<div class="flex items-center gap-3 pt-2 text-on-surface-variant">
+<a aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-bright flex items-center justify-center transition-colors hover:text-primary" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a aria-label="Twitter / X" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-bright flex items-center justify-center transition-colors hover:text-primary" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">tag</span>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-bright flex items-center justify-center transition-colors hover:text-primary" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-bright flex items-center justify-center transition-colors hover:text-primary" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a aria-label="GitHub" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-bright flex items-center justify-center transition-colors hover:text-primary" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+</a>
+</div>
+</div>
+<!-- Col 3: Plataforma -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wider uppercase">Plataforma</h4>
+<ul class="space-y-2 text-body-sm font-body-sm">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#como-funciona">¿Cómo funciona?</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#retos">Catálogo de retos</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#testimonios">Historias de éxito</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#proyectos">Proyectos Integradores</a></li>
+</ul>
+</div>
+<!-- Col 4: Ecosistema -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wider uppercase">Ecosistema</h4>
+<ul class="space-y-2 text-body-sm font-body-sm">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#empresas">Para Empresas</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#estudiantes">Para Estudiantes</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#docentes">Comité Docente</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#alianzas">Alianzas Institucionales</a></li>
+</ul>
+</div>
+<!-- Col 5: Legal & Soporte -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wider uppercase">Legal &amp; Soporte</h4>
+<ul class="space-y-2 text-body-sm font-body-sm">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#terminos">Términos de servicio</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#privacidad">Política de privacidad</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#faq">Preguntas frecuentes</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#contacto">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar: Institutional Accreditation & Rights -->
+<div class="pt-8 border-t border-surface-variant/20 flex flex-col md:flex-row items-center justify-between gap-4 text-caption font-caption text-outline">
+<p class="text-center md:text-left">
+          © 2025 CESDE Conecta. Transformando retos en soluciones con talento del futuro. Institución de Educación para el Trabajo y el Desarrollo Humano.
+        </p>
+<div class="flex items-center gap-6">
+<span class="flex items-center gap-1.5 text-on-surface-variant"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C897] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00C897]"></span></span><span class="text-[#00C897] font-semibold ml-1">Plataforma Operativa 100%</span></span>
+<span class="text-outline">Medellín, Colombia</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
