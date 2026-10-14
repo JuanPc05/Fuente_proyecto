@@ -1,0 +1,420 @@
+<!DOCTYPE html><html class="dark" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Registro - CESDE Conecta</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatum -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#121318",
+            "on-secondary-fixed": "#2b0052",
+            "surface": "#121318",
+            "surface-tint": "#ffb1c5",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-container": "#ffffff",
+            "primary-container": "#e11d74",
+            "inverse-on-surface": "#2f3036",
+            "outline": "#a98890",
+            "on-error": "#690005",
+            "tertiary-fixed": "#7df4ff",
+            "on-surface-variant": "#e2bdc5",
+            "secondary-fixed-dim": "#dbb8ff",
+            "error": "#ffb4ab",
+            "inverse-primary": "#ba005c",
+            "on-tertiary-fixed-variant": "#004f54",
+            "background": "#121318",
+            "on-secondary-container": "#d0a6ff",
+            "on-secondary": "#470083",
+            "on-primary-fixed-variant": "#8f0045",
+            "on-secondary-fixed-variant": "#6600b7",
+            "on-primary-fixed": "#3f001b",
+            "surface-bright": "#38393f",
+            "on-tertiary-fixed": "#002022",
+            "tertiary-fixed-dim": "#00dbe9",
+            "surface-variant": "#34343a",
+            "inverse-surface": "#e3e1e9",
+            "secondary-fixed": "#efdbff",
+            "error-container": "#93000a",
+            "on-primary": "#65002f",
+            "secondary-container": "#6807ba",
+            "surface-container": "#1e1f25",
+            "surface-container-highest": "#34343a",
+            "outline-variant": "#5a4046",
+            "secondary": "#dbb8ff",
+            "on-tertiary": "#00363a",
+            "primary": "#ffb1c5",
+            "surface-container-lowest": "#0d0e13",
+            "on-primary-container": "#ffffff",
+            "tertiary-container": "#00838c",
+            "surface-container-low": "#1a1b21",
+            "primary-fixed": "#ffd9e1",
+            "surface-container-high": "#292a2f",
+            "on-background": "#e3e1e9",
+            "on-surface": "#e3e1e9",
+            "primary-fixed-dim": "#ffb1c5",
+            "tertiary": "#00dbe9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "3rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "gutter-lg": "2rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin": "2rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "caption": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-mesh-glow {
+      background: radial-gradient(circle at 50% 15%, rgba(225, 29, 116, 0.15) 0%, rgba(104, 7, 186, 0.08) 35%, transparent 70%);
+    }
+    .card-glow {
+      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), 0 0 35px -5px rgba(225, 29, 116, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<!-- Ambient Backdrop Glows -->
+<div class="fixed inset-0 pointer-events-none custom-mesh-glow -z-10"></div>
+<div class="fixed top-1/3 -right-32 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none -z-10"></div>
+<div class="fixed bottom-10 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none -z-10"></div>
+<!-- TopNavBar (Shared Component implementation) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-surface-variant/40 dark:border-surface-variant/40 shadow-lg shadow-black/40">
+<div class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-primary-container/40 p-0.5 bg-surface-container-high transition-transform duration-200 group-hover:scale-105">
+<img alt="CESDE Logo" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbHjXOTu1nj0mpdPrX9kG4UheDAYzeieAyfHS-gDCwnofSt6TOgHgkPAcXbSoYSzqaTrI_d8U7OOlCnSZOpp48lR6CnWNJVSDM3t0JPIJgPWuI9urf5pIoFaOQZH6fTri722ETuS2KaCc_Vj2cr2yGrBno4ZXw_d72QTAebVFohv7zxiYKg-PeHNVDTDm49MApVLXOmKaMr3uUw1EXNY2i-W06wwq5Dd0EYTXkfiqkDUaRIwDNyHbGApViNuHXi1M9tY">
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-on-surface dark:text-on-surface tracking-tight">CESDE Conecta</span>
+</a>
+<!-- Navigation links (Desktop) -->
+<nav class="hidden md:flex items-center gap-8 text-label-md font-label-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary dark:hover:text-primary transition-all duration-200" href="#">Cómo funciona</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary dark:hover:text-primary transition-all duration-200" href="#">Retos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary dark:hover:text-primary transition-all duration-200" href="#">Testimonios</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors hover:text-primary dark:hover:text-primary transition-all duration-200" href="#">Contáctanos</a>
+</nav>
+<!-- Auth Actions -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex px-4 py-2 text-label-md font-label-md text-on-surface-variant hover:text-primary dark:hover:text-primary transition-all duration-200 active:scale-95 transition-transform duration-150" href="#">
+          Iniciar Sesión
+        </a>
+<a class="px-5 py-2.5 rounded-full bg-primary-container text-white text-label-md font-label-md font-semibold shadow-md shadow-primary-container/30 hover:brightness-110 active:scale-95 transition-all duration-150" href="#">
+          Crear Cuenta
+        </a>
+</div>
+</div>
+</header>
+<!-- Layout central (Centrado en pantalla con min-h-[calc(100vh-160px)]) -->
+<main class="flex-grow flex items-center justify-center min-h-[calc(100vh-160px)] px-4 py-12 md:py-16">
+<div class="w-full max-w-lg mx-auto">
+<!-- Tarjeta de Registro (Card) -->
+<div class="bg-surface-container-low/95 backdrop-blur-xl rounded-3xl border border-[#2a2b33] p-8 md:p-10 card-glow relative overflow-hidden">
+<!-- Subtle Top Highlight Line -->
+<div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary-container/50 to-transparent"></div>
+<!-- Encabezado -->
+<div class="text-center mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-caption font-caption uppercase tracking-wider mb-3">
+  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+  Registro de Usuarios
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface mb-2 tracking-tight">Crea tu cuenta</h1>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed max-w-sm mx-auto">
+            Únete al ecosistema donde empresas y estudiantes conectan a través de proyectos reales.
+          </p>
+</div>
+<!-- Formulario solicitado -->
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<!-- 1. Nombre completo -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="fullName">Nombre completo</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-outline pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="person">person</span>
+</span>
+<input class="w-full pl-11 pr-4 py-3 bg-[#12141C] border border-white/10 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-primary-container/25 transition-all outline-none" id="fullName" name="fullName" placeholder="Ej. Carolina Herrera o Tech Innovators SAS" required="" type="text">
+</div>
+</div>
+<!-- 2. Correo electrónico -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="email">Correo electrónico</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-outline pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+</span>
+<input class="w-full pl-11 pr-4 py-3 bg-[#12141C] border border-white/10 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-primary-container/25 transition-all outline-none" id="email" name="email" placeholder="correo@empresa.com o @cesde.edu.co" required="" type="email">
+</div>
+</div>
+<!-- 3. Contraseña -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="password">Contraseña</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-outline pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="lock">lock</span>
+</span>
+<input class="w-full pl-11 pr-11 py-3 bg-[#12141C] border border-white/10 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-primary-container/25 transition-all outline-none" id="password" name="password" oninput="updatePasswordStrength(this.value)" placeholder="Crea una contraseña segura" required="" type="password">
+<button aria-label="Alternar visibilidad de contraseña" class="absolute right-3.5 text-outline hover:text-on-surface transition-colors p-1" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="visibility" id="pwdIcon">visibility</span>
+</button>
+</div>
+<!-- Indicador de seguridad -->
+<div class="pt-1.5">
+<div class="flex items-center justify-between text-caption font-caption mb-1">
+<span class="text-outline">Seguridad de la contraseña</span>
+<span class="text-outline transition-colors" id="strengthText">Seguridad básica</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 h-1.5 rounded-full overflow-hidden bg-surface-container-highest">
+<div class="h-full rounded-full transition-colors duration-300 bg-surface-variant" id="bar1"></div>
+<div class="h-full rounded-full transition-colors duration-300 bg-surface-variant" id="bar2"></div>
+<div class="h-full rounded-full transition-colors duration-300 bg-surface-variant" id="bar3"></div>
+<div class="h-full rounded-full transition-colors duration-300 bg-surface-variant" id="bar4"></div>
+</div>
+</div>
+</div>
+<!-- 4. Rol en la plataforma -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface" for="userRole">Rol en la plataforma</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-outline pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="badge">badge</span>
+</span>
+<select class="w-full appearance-none pl-11 pr-10 py-3 bg-[#12141C] border border-white/10 rounded-xl text-body-md font-body-md text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/25 transition-all outline-none cursor-pointer" id="userRole" name="userRole" required="">
+<option class="bg-[#12141C] text-outline" disabled="" selected="" value="">Selecciona tu rol institucional</option>
+<option class="bg-[#12141C] text-on-surface" value="empresa">Empresa / Emprendedor</option>
+<option class="bg-[#12141C] text-on-surface" value="estudiante">Estudiante CESDE</option>
+<option class="bg-[#12141C] text-on-surface" value="docente">Docente / Asesor Metodológico</option>
+</select>
+<span class="absolute right-4 text-outline pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="expand_more">expand_more</span>
+</span>
+</div>
+</div>
+<!-- Botón CTA principal -->
+<div class="pt-3">
+<button class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-[#e11d74] to-[#7928ca] hover:brightness-110 text-white text-label-md font-label-md font-bold tracking-wide transition-all duration-200 shadow-lg shadow-[#e11d74]/30 active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+  <span class="">Crear Cuenta</span>
+  <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Enlace alternativo debajo -->
+<div class="text-center pt-2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              ¿Ya tienes cuenta? 
+              <a class="text-primary font-semibold hover:underline hover:text-white transition-colors ml-1" href="#">
+                Inicia sesión
+              </a>
+</p>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer institucional Completo -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant/30 dark:border-surface-variant/30 w-full mt-auto">
+<div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Top Row: Brand & Columns -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12">
+<!-- Col 1: Brand & Status -->
+<div class="md:col-span-2 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden ring-1 ring-white/20 p-0.5 bg-surface-container flex-shrink-0">
+<img alt="CESDE Logo" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbHjXOTu1nj0mpdPrX9kG4UheDAYzeieAyfHS-gDCwnofSt6TOgHgkPAcXbSoYSzqaTrI_d8U7OOlCnSZOpp48lR6CnWNJVSDM3t0JPIJgPWuI9urf5pIoFaOQZH6fTri722ETuS2KaCc_Vj2cr2yGrBno4ZXw_d72QTAebVFohv7zxiYKg-PeHNVDTDm49MApVLXOmKaMr3uUw1EXNY2i-W06wwq5Dd0EYTXkfiqkDUaRIwDNyHbGApViNuHXi1M9tY">
+</div>
+<span class="text-headline-sm font-headline-sm font-extrabold text-on-surface dark:text-on-surface tracking-tight">CESDE Conecta</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Transformando retos empresariales en soluciones efectivas con el talento joven e innovador del futuro.
+          </p>
+<div class="flex items-center gap-2.5 pt-1">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+</span>
+<span class="text-caption font-caption text-on-surface-variant">Sistemas 100% operativos</span>
+</div>
+</div>
+<!-- Col 2: Plataforma -->
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wide uppercase">Plataforma</h4>
+<ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Cómo funciona</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Explorar Retos</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Para Empresas</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Para Estudiantes</a></li>
+</ul>
+</div>
+<!-- Col 3: Ecosistema -->
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wide uppercase">Ecosistema</h4>
+<ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Casos de Éxito</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Mentores &amp; Docentes</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Alianzas CESDE</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Comunidad Digital</a></li>
+</ul>
+</div>
+<!-- Col 4: Legal & Soporte -->
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface font-semibold tracking-wide uppercase">Legal &amp; Soporte</h4>
+<ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Términos de servicio</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Política de privacidad</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Preguntas frecuentes</a></li>
+<li class=""><a class="hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Row: Copyright & Socials -->
+<div class="pt-8 border-t border-surface-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-caption font-caption text-on-surface-variant text-center sm:text-left">
+          © 2025 CESDE Conecta. Transformando retos en soluciones con talento del futuro. Todos los derechos reservados.
+        </p>
+<!-- Social Icons -->
+<div class="flex items-center gap-4 text-on-surface-variant">
+<a aria-label="LinkedIn" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]" data-icon="work">work</span>
+</a>
+<a aria-label="Comunidad" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]" data-icon="groups">groups</span>
+</a>
+<a aria-label="Soporte y Preguntas" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]" data-icon="help_center">help_center</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+    function togglePasswordVisibility() {
+      const pwdInput = document.getElementById('password');
+      const pwdIcon = document.getElementById('pwdIcon');
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        pwdIcon.textContent = 'visibility_off';
+      } else {
+        pwdInput.type = 'password';
+        pwdIcon.textContent = 'visibility';
+      }
+    }
+
+    function updatePasswordStrength(val) {
+      const bar1 = document.getElementById('bar1');
+      const bar2 = document.getElementById('bar2');
+      const bar3 = document.getElementById('bar3');
+      const bar4 = document.getElementById('bar4');
+      const strengthText = document.getElementById('strengthText');
+
+      // Reset
+      [bar1, bar2, bar3, bar4].forEach(b => {
+        b.className = 'h-full rounded-full transition-colors duration-300 bg-surface-variant';
+      });
+
+      if (!val || val.length === 0) {
+        strengthText.textContent = 'Seguridad básica';
+        strengthText.className = 'text-outline transition-colors';
+        return;
+      }
+
+      let score = 0;
+      if (val.length >= 6) score++;
+      if (val.length >= 10) score++;
+      if (/[A-Z]/.test(val) && /[0-9]/.test(val)) score++;
+      if (/[^A-Za-z0-9]/.test(val)) score++;
+
+      if (score === 1) {
+        bar1.classList.remove('bg-surface-variant');
+        bar1.classList.add('bg-error');
+        strengthText.textContent = 'Débil';
+        strengthText.className = 'text-error transition-colors';
+      } else if (score === 2) {
+        [bar1, bar2].forEach(b => {
+          b.classList.remove('bg-surface-variant');
+          b.classList.add('bg-amber-500');
+        });
+        strengthText.textContent = 'Media';
+        strengthText.className = 'text-amber-400 transition-colors';
+      } else if (score === 3) {
+        [bar1, bar2, bar3].forEach(b => {
+          b.classList.remove('bg-surface-variant');
+          b.classList.add('bg-primary-container');
+        });
+        strengthText.textContent = 'Buena';
+        strengthText.className = 'text-primary transition-colors';
+      } else if (score >= 4) {
+        [bar1, bar2, bar3, bar4].forEach(b => {
+          b.classList.remove('bg-surface-variant');
+          b.classList.add('bg-emerald-500');
+        });
+        strengthText.textContent = 'Excelente';
+        strengthText.className = 'text-emerald-400 transition-colors';
+      }
+    }
+  </script>
+
+
+</body></html>
