@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalle de Empresa - CESDE Conecta</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#65002f",
+            "surface-container-highest": "#34343a",
+            "on-secondary-fixed-variant": "#6600b7",
+            "surface-tint": "#ffb1c5",
+            "tertiary-fixed": "#7df4ff",
+            "on-tertiary-fixed": "#002022",
+            "on-primary-fixed": "#3f001b",
+            "surface-container-high": "#292a2f",
+            "primary-fixed": "#ffd9e1",
+            "surface-container-lowest": "#0d0e13",
+            "on-surface-variant": "#e2bdc5",
+            "inverse-on-surface": "#2f3036",
+            "outline-variant": "#5a4046",
+            "on-secondary-container": "#d0a6ff",
+            "inverse-surface": "#e3e1e9",
+            "on-tertiary-fixed-variant": "#004f54",
+            "on-secondary-fixed": "#2b0052",
+            "on-tertiary": "#00363a",
+            "surface": "#121318",
+            "primary-container": "#e11d74",
+            "surface-bright": "#38393f",
+            "inverse-primary": "#ba005c",
+            "secondary": "#dbb8ff",
+            "secondary-container": "#6807ba",
+            "tertiary": "#00dbe9",
+            "error": "#ffb4ab",
+            "on-background": "#e3e1e9",
+            "tertiary-container": "#00838c",
+            "on-error-container": "#ffdad6",
+            "on-surface": "#e3e1e9",
+            "on-primary-fixed-variant": "#8f0045",
+            "surface-container-low": "#1a1b21",
+            "tertiary-fixed-dim": "#00dbe9",
+            "secondary-fixed-dim": "#dbb8ff",
+            "surface-dim": "#121318",
+            "primary-fixed-dim": "#ffb1c5",
+            "background": "#121318",
+            "surface-container": "#1e1f25",
+            "error-container": "#93000a",
+            "primary": "#ffb1c5",
+            "outline": "#a98890",
+            "on-error": "#690005",
+            "surface-variant": "#34343a",
+            "on-primary-container": "#ffffff",
+            "secondary-fixed": "#efdbff",
+            "on-tertiary-container": "#ffffff",
+            "on-secondary": "#470083"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "margin-desktop": "3rem",
+            "gutter-lg": "2rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "margin": "2rem",
+            "space-md": "1rem",
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "caption": ["Inter"],
+            "label-sm": ["Inter"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"]
+          },
+          "fontSize": {
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen flex flex-col font-body-md selection:bg-primary-container selection:text-white relative overflow-x-hidden">
+<!-- Ambient Background Mesh Glow -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute -top-40 right-10 w-[550px] h-[550px] bg-primary-container/10 rounded-full blur-[140px]"></div>
+<div class="absolute top-1/2 -left-40 w-[450px] h-[450px] bg-secondary-container/15 rounded-full blur-[130px]"></div>
+</div>
+<!-- Shared TopNavBar Anchor -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-surface-variant/40 dark:border-surface-variant/40 shadow-lg shadow-black/40">
+<div class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo Cluster -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center ring-2 ring-primary-container/30 group-hover:ring-primary-container transition-all">
+<img alt="CESDE Conecta Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKNSTLniJv2BfzgPaszmG3Rc88g8bt0XdetTlcz9WG4Lbkv0Gdwc5AIAUVcrXZaaLIyZXQCGkr-kKWTQeuiT09DA_UuPIyz6emngA7B7R1ds89_V2B74nLEs6CmxGdGJadBAF8JhL-rIi2cvbYMvxD4rQL5peg_H0bc8YWqjzQtATt_nz3ViYLCulGXr6FM_A-DxgU8zeJRrFUutzSwp_uOPP5lgb5tMWHwLDkLz3"/>
+</div>
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md font-extrabold text-on-surface dark:text-on-surface tracking-tight leading-none">CESDE Conecta</span>
+<span class="text-caption font-caption text-primary tracking-wider uppercase mt-1">Ecosistema Empresarial</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#">Cómo funciona</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#">Retos</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#">Testimonios</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contáctanos</a>
+</nav>
+<!-- Trailing Action: Volver al Dashboard -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface text-label-md font-label-md hover:border-primary-container/50 hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-primary text-[18px]">space_dashboard</span>
+<span class="hidden sm:inline">Volver al Dashboard</span>
+<span class="sm:hidden">Dashboard</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Central Main Content Container -->
+<main class="relative z-10 flex-1 flex flex-col justify-center items-center px-4 sm:px-6 md:px-12 py-8 md:py-12 w-full max-w-7xl mx-auto">
+<!-- Breadcrumb / Context Header -->
+<div class="w-full max-w-4xl mb-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-outline">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+          Dashboard
+        </a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Empresas Aliadas</a>
+<span>/</span>
+<span class="text-on-surface">Detalle de Organización</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-caption font-caption text-outline">ID de Registro:</span>
+<code class="px-2 py-0.5 rounded bg-surface-container-high border border-white/5 text-primary text-caption font-mono">EMP-2025-0489</code>
+</div>
+</div>
+<!-- Main Corporate Profile Card -->
+<section class="w-full max-w-4xl bg-surface-container-low rounded-2xl border border-white/10 shadow-2xl shadow-black/80 p-6 sm:p-8 md:p-10 relative overflow-hidden backdrop-blur-sm">
+<!-- Top Subtle Edge Highlight -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-secondary-container to-transparent opacity-80"></div>
+<!-- Encabezado de la Tarjeta -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-6 pb-8 border-b border-white/10">
+<div class="flex items-start gap-5">
+<!-- Corporate Logo/Icon Avatar -->
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-primary-container/30 to-secondary-container/40 border border-primary-container/40 flex items-center justify-center flex-shrink-0 shadow-lg shadow-black/50 relative group">
+<span class="material-symbols-outlined text-primary-fixed text-3xl md:text-4xl">domain</span>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-[#00C897] rounded-full border-2 border-surface-container-low flex items-center justify-center" title="Activa">
+<span class="w-1.5 h-1.5 bg-white rounded-full"></span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="text-headline-md sm:text-headline-lg font-headline-lg text-white font-bold tracking-tight">NovaLogistics S.A.S.</h1>
+</div>
+<p class="text-body-md font-body-md text-outline-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+              Empresa verificada en el ecosistema CESDE
+            </p>
+<span class="text-caption font-caption text-outline">Miembro activo desde Febrero, 2024</span>
+</div>
+</div>
+<!-- Corporate Status Pill -->
+<div class="self-start sm:self-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-label-sm font-label-sm">
+<span class="w-2 h-2 rounded-full bg-[#00C897] animate-pulse"></span>
+<span>Activa</span>
+</div>
+</div>
+</div>
+<!-- Sección 1: Información General -->
+<div class="pt-8 pb-6">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-[20px]">corporate_fare</span>
+<h2 class="text-headline-sm font-headline-sm text-white font-semibold">Información General</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- NIT -->
+<div class="bg-surface-container/60 rounded-xl p-4 border border-white/5 flex items-center justify-between hover:border-white/15 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">NIT</span>
+<span class="text-headline-sm font-headline-sm text-white font-semibold tracking-wide">900.123.456-7</span>
+</div>
+</div>
+<button class="text-outline hover:text-white p-1 rounded transition-colors" title="Copiar NIT">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- Sector Económico -->
+<div class="bg-surface-container/60 rounded-xl p-4 border border-white/5 flex items-center justify-between hover:border-white/15 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-outline">Sector Económico</span>
+<span class="text-headline-sm font-headline-sm text-white font-semibold">Tecnología y Software</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container/40 border border-secondary/30 text-secondary text-caption font-caption">B2B SaaS</span>
+</div>
+</div>
+</div>
+<!-- Separador Visual -->
+<div class="border-t border-white/10 my-4"></div>
+<!-- Sección 2: Datos de Contacto -->
+<div class="pt-4 pb-6">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-[20px]">contacts</span>
+<h2 class="text-headline-sm font-headline-sm text-white font-semibold">Datos de Contacto</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Nombre del Contacto -->
+<div class="bg-surface-container/60 rounded-xl p-4 border border-white/5 flex flex-col gap-2 hover:border-white/15 transition-colors">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span class="text-label-sm font-label-sm">Nombre del Contacto</span>
+</div>
+<div class="mt-1">
+<p class="text-body-md font-body-md text-white font-semibold">Carlos Arango</p>
+<p class="text-caption font-caption text-outline">Director de Innovación</p>
+</div>
+</div>
+<!-- Correo Electrónico -->
+<div class="bg-surface-container/60 rounded-xl p-4 border border-white/5 flex flex-col gap-2 hover:border-white/15 transition-colors">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span class="text-label-sm font-label-sm">Correo Electrónico</span>
+</div>
+<div class="mt-1">
+<a class="text-body-md font-body-md text-white font-semibold hover:text-primary transition-colors truncate block" href="mailto:contacto@novalogistics.com">
+                contacto@novalogistics.com
+              </a>
+<span class="text-caption font-caption text-emerald-400 flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Canal Principal
+              </span>
+</div>
+</div>
+<!-- Teléfono -->
+<div class="bg-surface-container/60 rounded-xl p-4 border border-white/5 flex flex-col gap-2 hover:border-white/15 transition-colors">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="text-label-sm font-label-sm">Teléfono de Contacto</span>
+</div>
+<div class="mt-1">
+<a class="text-body-md font-body-md text-white font-semibold hover:text-primary transition-colors block" href="tel:+573001234567">
+                +57 300 123 4567
+              </a>
+<span class="text-caption font-caption text-outline">Medellín, Colombia</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sección 3: Bloque de Estadísticas y Retos Vinculados -->
+<div class="pt-4 pb-6">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<h2 class="text-headline-sm font-headline-sm text-white font-semibold">Resumen en la Plataforma</h2>
+</div>
+<span class="text-caption font-caption text-outline">Ciclo Académico 2025-1</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-surface-container/40 p-4 rounded-xl border border-white/5 text-center">
+<span class="text-headline-lg font-headline-lg font-bold text-white block">3</span>
+<span class="text-label-sm font-label-sm text-outline mt-1 block">Retos Publicados</span>
+</div>
+<div class="bg-surface-container/40 p-4 rounded-xl border border-white/5 text-center">
+<span class="text-headline-lg font-headline-lg font-bold text-tertiary block">12</span>
+<span class="text-label-sm font-label-sm text-outline mt-1 block">Soluciones Recibidas</span>
+</div>
+<div class="bg-surface-container/40 p-4 rounded-xl border border-white/5 text-center">
+<span class="text-headline-lg font-headline-lg font-bold text-primary block">2</span>
+<span class="text-label-sm font-label-sm text-outline mt-1 block">Retos en Ejecución</span>
+</div>
+<div class="bg-surface-container/40 p-4 rounded-xl border border-white/5 text-center">
+<span class="text-headline-lg font-headline-lg font-bold text-emerald-400 block">100%</span>
+<span class="text-label-sm font-label-sm text-outline mt-1 block">Tasa de Feedback</span>
+</div>
+</div>
+</div>
+<!-- Barra Inferior de Acciones -->
+<div class="pt-6 mt-4 border-t border-white/10 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+<a class="inline-flex items-center gap-2 text-outline hover:text-white text-label-md font-label-md transition-colors py-2 px-3" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Volver al Dashboard</span>
+</a>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-surface-container-high border border-white/10 text-on-surface hover:text-white hover:bg-surface-container-highest transition-colors text-label-md font-label-md w-full sm:w-auto">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Historial</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-white font-label-md text-label-md font-semibold shadow-lg shadow-primary-container/25 hover:brightness-110 active:scale-95 transition-all w-full sm:w-auto">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Editar Información</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Footer Anchor -->
+<footer class="docked full-width bottom bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant/30 dark:border-surface-variant/30 relative z-20">
+<div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Top Columns -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Brand Summary -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
+<img alt="CESDE Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRKNSTLniJv2BfzgPaszmG3Rc88g8bt0XdetTlcz9WG4Lbkv0Gdwc5AIAUVcrXZaaLIyZXQCGkr-kKWTQeuiT09DA_UuPIyz6emngA7B7R1ds89_V2B74nLEs6CmxGdGJadBAF8JhL-rIi2cvbYMvxD4rQL5peg_H0bc8YWqjzQtATt_nz3ViYLCulGXr6FM_A-DxgU8zeJRrFUutzSwp_uOPP5lgb5tMWHwLDkLz3"/>
+</div>
+<span class="text-headline-md font-headline-md font-extrabold text-on-surface dark:text-on-surface">CESDE Conecta</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant">
+            Vinculando el talento de vanguardia con desafíos empresariales tangibles para generar innovación con impacto.
+          </p>
+<div class="mt-2 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-white/5 text-label-sm font-label-sm text-outline w-fit">
+<span class="w-2 h-2 rounded-full bg-[#00C897]"></span>
+<span>Plataforma Operativa 100%</span>
+</div>
+</div>
+<!-- Col 1: Plataforma -->
+<div class="flex flex-col gap-3">
+<span class="text-headline-sm font-headline-sm text-white font-semibold">Plataforma</span>
+<div class="flex flex-col gap-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Cómo funciona</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Explorar Retos</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Casos de Éxito</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Preguntas frecuentes</a>
+</div>
+</div>
+<!-- Col 2: Ecosistema -->
+<div class="flex flex-col gap-3">
+<span class="text-headline-sm font-headline-sm text-white font-semibold">Ecosistema</span>
+<div class="flex flex-col gap-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Empresas Aliadas</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Comunidad Estudiantil</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Mentores &amp; Evaluadores</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Iniciativas CESDE</a>
+</div>
+</div>
+<!-- Col 3: Legal & Soporte -->
+<div class="flex flex-col gap-3">
+<span class="text-headline-sm font-headline-sm text-white font-semibold">Legal &amp; Soporte</span>
+<div class="flex flex-col gap-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Términos de servicio</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Política de privacidad</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Contacto</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Canal de Transparencia</a>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright & City -->
+<div class="pt-8 border-t border-surface-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-body-sm font-body-sm text-outline text-center sm:text-left">
+          © 2025 CESDE Conecta. Transformando retos en soluciones con talento del futuro. Todos los derechos reservados.
+        </p>
+<span class="text-caption font-caption text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+          Medellín, Colombia
+        </span>
+</div>
+</div>
+</footer>
+</body></html>
